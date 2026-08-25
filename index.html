@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ping Pong</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: #1b1b1b;
+      color: #eaeaea;
+      font-family: system-ui, "Segoe UI", Arial, sans-serif;
+    }
+    canvas {
+      background: rgb(200, 255, 255);
+      border: 1px solid #444;
+      max-width: 100%;
+      height: auto;
+      image-rendering: pixelated;
+    }
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: #b5b5b5;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="700" height="500"></canvas>
+  <p>Player 1: W / S &nbsp;&nbsp;&middot;&nbsp;&nbsp; Player 2: &uarr; / &darr; &nbsp;&nbsp;&middot;&nbsp;&nbsp; skor 21 menang</p>
+  <script src="game.js"></script>
+</body>
+</html>
